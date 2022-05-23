@@ -1,0 +1,78 @@
+%ic {
+	font-family: "symplyaesthetic";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-facebook-logo:before {
+	content: "\e901";
+}
+
+._icon-arrow-2:before {
+	content: "\e902";
+}
+
+._icon-arrow:before {
+	content: "\e903";
+	position: absolute;
+	font-size: rem(10);
+	left: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+._icon-check:before {
+	content: "\e904";
+}
+
+._icon-dental:before {
+	content: "\e905";
+}
+
+._icon-hair:before {
+	content: "\e906";
+}
+
+._icon-instagram:before {
+	content: "\e907";
+}
+
+._icon-linkedin:before {
+	content: "\e908";
+}
+
+._icon-logo-green:before {
+	content: "\e909";
+}
+
+._icon-logo-white:before {
+	content: "\e90a";
+}
+
+._icon-plastic:before {
+	content: "\e90b";
+}
+
+._icon-rating1:before {
+	content: "\e90c";
+}
+
+._icon-twitter:before {
+	content: "\e90d";
+}
+
+._icon-rating:before {
+	content: "\e900";
+}
