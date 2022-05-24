@@ -50,6 +50,16 @@
         @include adaptiveValue("padding-left", 130, 10, 1440, 425, 1 );
         @include adaptiveValue("padding-right", 44, 10, 1440, 425, 1);
         letter-spacing: -0.55px;
+
+        opacity: 0;
+        transform: translate(-80%, 0%);
+
+        &._active {
+            opacity: 1;
+        transform: translate(0%, 0%);
+        transition: transform 0.8s ease , opacity 0.4s;
+        }
+
         @media (max-width:$tablet){
             color: #fff;
         }
@@ -67,6 +77,16 @@
         margin-bottom: 29px;
         @include adaptiveValue("padding-left", 130, 15 );
         @include adaptiveValue("padding-right", 44, 15);
+
+        opacity: 0;
+        transform: translate(-80%, 0%);
+
+        &._active {
+            opacity: 1;
+            transform: translate(0%, 0%);
+            transition: all 0.8s ease 0.4s;
+        }
+
         @media (max-width:$tablet){
             color: #fff;
         }
@@ -118,6 +138,27 @@
         font-family: Marcellus;
         @include adaptiveValue("font-size", 36, 24);
         letter-spacing: -0.75px;
+
+        opacity: 0;
+        transform: translate(0%, 40%);
+
+        &._active {
+            opacity: 1;
+            transform: translate(0%, 0%);
+            transition: all 0.8s ease 0s;
+        }
+    }
+
+    &__desc {
+
+        opacity: 0;
+        transform: translate(0%, 40%);
+
+        &._active {
+            opacity: 1;
+            transform: translate(0%, 0%);
+            transition: all 0.8s ease 0.5s;
+        }
     }
 }
 
@@ -164,7 +205,31 @@
         width: 100%;
         @include adaptiveValue("padding-left", 150, 0);
         padding-bottom: 30px;
+
+        li {
+            transform: translate(50%, 0%);
+        }
     }
+
+    &__list {
+        &._active {
+            li { 
+                @for $var from 1 to 6 {
+                    $delay: $var * 0.2;
+                    &:nth-child(#{$var}) {
+                        @if $var==1 {
+                            transform: translate(0%, 0%);
+                            transition: transform 0.8s ease 0s;
+                        } @else {
+                            transform: translate(0%, 0%);
+                            transition: transform 0.8s ease #{$delay + s};
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 
     &__item {
         font-size: 18px;
@@ -501,7 +566,8 @@
             text-align: left;
             position: relative;
             padding-right: 45px;
-
+            transition: 0.3s;
+            
             &::after {
                 content: '+';
                 position: absolute;
@@ -514,6 +580,12 @@
         }
 
         ._spoller-active {
+
+            &.spollers__title {
+                margin-bottom: 25px;
+                transition: 0.3s;
+            }
+
             &::after {
                 transform: rotate(45deg) translateY(-70%);
                 transition: 0.5s;
@@ -522,6 +594,29 @@
         }
     
         &__body {
+        }
+    }
+
+    .spollers {
+
+        div {
+            transform: translate(-50%, 0%);
+        }
+        &._active {
+            div { 
+                @for $var from 1 to 10 {
+                    $delay: $var * 0.2;
+                    &:nth-child(#{$var}) {
+                        @if $var==1 {
+                            transform: translate(0%, 0%);
+                            transition: transform 0.8s ease 0s;
+                        } @else {
+                            transform: translate(0%, 0%);
+                            transition: transform 0.8s ease #{$delay + s};
+                        }
+                    }
+                }
+            }
         }
     }
 }
