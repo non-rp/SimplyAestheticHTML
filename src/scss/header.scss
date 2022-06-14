@@ -340,6 +340,11 @@
 		}
 
 		&::before {
+			position: absolute;
+			font-size: rem(10);
+			left: 100%;
+			top: 50%;
+			transform: translateY(-50%);
 
 			@media (max-width:$tablet){
 				display: none;
