@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Шаблон страницы"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="single-doctors">
+
+            <section class="single-doctors__head">
+                <div class="single-doctors__container">
+                    <div class="single-doctors__name">
+                        <img src="@img/dental.svg" alt="">
+                        <span>Meet the Surgeons</span>
+                    </div>
+                    <a class="single-doctors__back _icon-arrow">Return to listing</a>
+                    
+                </div>
+            </section>
+
+            <section class="about-doctor">
+                <div class="about-doctor__container">
+                     
+                <div class="about-doctor__column">
+                    <img src="@img/srgn.png" alt="">
+                </div>
+                <div class="about-doctor__column">
+                    <h1 class="about-doctor__name">Dr. Ergin Er</h1>
+                    <p class="about-doctor__term">Plastic Surgery</p>
+                    <div class="about-doctor__content">
+                       <b> Clinic:</b> Istanbul Aesthetic Center, Turkey, Istanbul  <br>
+                        <b>Experience:</b> 25 years <br>
+                        <br>
+                        With a background of 25 years in plastic surgery, Dr. Ergin Er. is a famous Turkish surgeon who is currently associated with Istanbul Aesthetic Center. He has extensive knowledge in performing high-quality plastic surgery techniques with accuracy and precision. He is fluent in English and Turkish. 
+
+                        He worked as Chief Military Doctor at Turkish Navy, Istanbul He worked at Transmed Aesthetic Clinic as Plastic Surgeon. Dr. Ergin worked as a Plastic surgeon at Anatomica Hospital. 
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section class="benefits-single">
+                <div class="benefits__container">
+                    <h2 class="asked__heading heading-2 _anim-items _anim-no-hide">Educational Background: </h2>
+                    <ul class="benefits__list  _anim-items _anim-no-hide">
+                        <li class="benefits__item _icon-check"><span>Natural looking Hair</span>  </li>
+                        <li class="benefits__item _icon-check ">Continued Hair Growth</li>
+                        <li class="benefits__item _icon-check ">Boost Confidence </li>
+                        <li class="benefits__item _icon-check ">No more Bald Spots</li>
+                        <li class="benefits__item _icon-check ">High Sucess Rate </li>
+    
+                    </ul>
+                </div>
+			</section>
+
+			<section class="asked">
+				<h2 class="asked__heading heading-2 _anim-items _anim-no-hide">Treatment Guides</h2>
+				<div data-spollers class="spollers _anim-items _anim-no-hide">
+					<div class="asked__item spollers__item">
+						<button type="button" data-spoller class="spollers__title">What is your philosophy towards medical care?</button>
+						<div class="spollers__body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, atque. Sed quis officia doloribus praesentium inventore distinctio eligendi et repellat impedit asperiores saepe porro in, esse eum eius. Vitae, sit!</p></div>
+					</div>
+					<div class="asked__item spollers__item">
+						<button type="button" data-spoller class="spollers__title">What is your philosophy towards medical care?</button>
+						<div class="spollers__body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, atque. Sed quis officia doloribus praesentium inventore distinctio eligendi et repellat impedit asperiores saepe porro in, esse eum eius. Vitae, sit!</p></div>
+					</div>
+					<div class="asked__item spollers__item">
+						<button type="button" data-spoller class="spollers__title">What is your philosophy towards medical care?</button>
+						<div class="spollers__body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, atque. Sed quis officia doloribus praesentium inventore distinctio eligendi et repellat impedit asperiores saepe porro in, esse eum eius. Vitae, sit!</p></div>
+					</div>
+					<div class="asked__item spollers__item">
+						<button type="button" data-spoller class="spollers__title">What is your philosophy towards medical care?</button>
+						<div class="spollers__body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, atque. Sed quis officia doloribus praesentium inventore distinctio eligendi et repellat impedit asperiores saepe porro in, esse eum eius. Vitae, sit!</p></div>
+					</div>
+					<div class="asked__item spollers__item">
+						<button type="button" data-spoller class="spollers__title">What is your philosophy towards medical care?</button>
+						<div class="spollers__body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, atque. Sed quis officia doloribus praesentium inventore distinctio eligendi et repellat impedit asperiores saepe porro in, esse eum eius. Vitae, sit!</p></div>
+					</div>
+					<div class="asked__item spollers__item">
+						<button type="button" data-spoller class="spollers__title">What is your philosophy towards medical care?</button>
+						<div class="spollers__body"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, atque. Sed quis officia doloribus praesentium inventore distinctio eligendi et repellat impedit asperiores saepe porro in, esse eum eius. Vitae, sit!</p></div>
+					</div>
+				</div>
+			</section>
+
+            <section class="meets">
+                <h2 class="meets__heading primary-title _anim-items _anim-no-hide">See what makes 
+                    Simply Aesthetic different </h2>
+                <div class="meets__buttons">
+                    <a href="" class="meets__button button --action _anim-items _anim-no-hide">Our Services</a>
+                    <a href="" class="meets__button button --light _anim-items _anim-no-hide">Book an appointment</a>
+                </div>
+            </section>
+
+        </main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -163,3 +163,13 @@ body {
 // Подключение стилей отдельных страниц
 @import "home";
 @import "tmp-page";
+
+
+// Стили архива докторов
+
+@import "archive-doct";
+
+// Конец стилей архива докторов
+
+@import "contact";
+@import "single-doctor";

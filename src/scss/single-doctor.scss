@@ -1,0 +1,133 @@
+
+.single-doctors {
+    
+
+    &__head {
+        background-color: #006974;
+        color: #fff;
+    }
+
+    &__container {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width:$mobile){
+             flex-direction: column; 
+        }
+    }
+
+    &__name {
+        font-family: Marcellus;
+        font-size: 24px;
+        letter-spacing: -0.19px;
+        line-height: 52px;
+        display: flex;
+        align-items: center;
+
+        @media (max-width:$mobile){
+             margin-bottom: 20px; 
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            max-width: 40px;
+            margin-right: 20px;
+        }
+    }
+
+    &__back {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        cursor: pointer;
+        @media (any-hover: hover){
+            &:hover{
+                color: #07B7CB;
+            }
+        }
+        &::before {
+            font-size: 12px;
+            order: 1;
+            margin-left: 15px;
+        }
+    }
+
+
+    .benefits-single {
+
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: #F2FDFB;
+        border-top: 1px solid #006974;
+        border-bottom: 1px solid #006974;
+
+
+
+        &__list {
+		}
+
+
+}
+
+    .benefits {
+        &__item {
+            max-width: 100%;
+		}
+    }
+
+    .asked__heading {
+        margin-bottom: 60px;
+    }
+
+}
+
+
+
+
+.about-doctor {
+    padding-top: 44px;
+    padding-bottom: 65px;
+    &__container {
+        display: grid;
+        grid-template-columns:repeat(auto-fill, minmax(45%, 1fr));
+        grid-column-gap: 50px;
+    }
+
+    &__column {
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__name {
+        color: #006974;
+        font-family: Marcellus;
+        font-size: 46px;
+        letter-spacing: -0.36px;
+        line-height: 64px;
+        margin-top: 38px;
+    }
+
+    &__term {
+        color: #006974;
+        font-family: "Nunito Sans";
+        font-size: 18px;
+        font-weight: 800;
+        letter-spacing: 0;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+}
+.content {
+    color: #404040;
+    font-family: "Nunito Sans";
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 30px;
+}

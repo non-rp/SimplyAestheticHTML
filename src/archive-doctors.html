@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Шаблон страницы"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="archive-doctors">
+            <section class="page-head">
+                <div class="page-head__img"><img src="@img/h1.png" alt=""></div>
+                <span class="page-head__title"><img src="@img/plastic.svg" alt="">Hair Transplant</span>
+            </section>
+
+            <section class="doctors">
+                <div class="doctors__container">
+
+                    <div class="doctors__item">
+                        <div class="doctors__img"><a href=""><img src="@img/srgn.png" alt=""></a></div>
+                        <h5 class="doctors__name"><a href="">Dr. Dan Erlewine</a></h5>
+                        <p>Plastic Surgery</p>
+                        <a href="" class="doctors__btn _icon-arrow">View profile</a>
+                    </div>
+
+                    <div class="doctors__item">
+                        <div class="doctors__img"><a href=""><img src="@img/srgn.png" alt=""></a></div>
+                        <h5 class="doctors__name"><a href="">Dr. Dan Erlewine</a></h5>
+                        <p>Plastic Surgery</p>
+                        <a href="" class="doctors__btn _icon-arrow">View profile</a>
+                    </div>
+
+                    <div class="doctors__item">
+                        <div class="doctors__img"><a href=""><img src="@img/srgn.png" alt=""></a></div>
+                        <h5 class="doctors__name"><a href="">Dr. Dan Erlewine</a></h5>
+                        <p>Plastic Surgery</p>
+                        <a href="" class="doctors__btn _icon-arrow">View profile</a>
+                    </div>
+
+                    <div class="doctors__item">
+                        <div class="doctors__img"><a href=""><img src="@img/srgn.png" alt=""></a></div>
+                        <h5 class="doctors__name"><a href="">Dr. Dan Erlewine</a></h5>
+                        <p>Plastic Surgery</p>
+                        <a href="" class="doctors__btn _icon-arrow">View profile</a>
+                    </div>
+
+                    <div class="doctors__item">
+                        <div class="doctors__img"><a href=""><img src="@img/srgn.png" alt=""></a></div>
+                        <h5 class="doctors__name"><a href="">Dr. Dan Erlewine</a></h5>
+                        <p>Plastic Surgery</p>
+                        <a href="" class="doctors__btn _icon-arrow">View profile</a>
+                    </div>
+
+                </div>
+                
+            </section>
+
+            <section class="meets">
+				<h2 class="meets__heading primary-title _anim-items _anim-no-hide">See what makes 
+					Simply Aesthetic different </h2>
+				<div class="meets__buttons">
+					<a href="" class="meets__button button --action _anim-items _anim-no-hide">Our Services</a>
+					<a href="" class="meets__button button --light _anim-items _anim-no-hide">Book an appointment</a>
+				</div>
+
+			</section>
+
+        </main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Шаблон страницы"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+        <main class="contact">
+
+            <section class="contact__map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9246.267558850634!2d-0.09808525669010132!3d51.48309439371738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760361e9ae53c9%3A0x80aea60a2ec7af02!2z0KPQvtC70LLQvtGA0YIsINCb0L7QvdC00L7QvSwg0JLQtdC70LjQutC-0LHRgNC40YLQsNC90LjRjw!5e0!3m2!1sru!2sua!4v1656935191648!5m2!1sru!2sua" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h5 class="contact__title">Simply Aesthetic</h5>
+                    
+                    <div>
+                        Simply Aesthetic <br>
+                    Forma House<br>
+                    40 Bowling Green Lane<br>
+                    London<br>
+                    EC1R 0NE<br>
+                    <br>
+                    T: 020 3835 3881</div>
+                </div>
+
+                <div class="contact__forms">
+                    <h5 class="contact__title">Contact us</h5>
+                    <form action="">
+                        <div class="contact__column">
+                            <div>
+                                <label for="name">name</label>
+                                <input type="text" name="name">
+                            </div>
+                            
+                            <div>
+                                <label for="name">name</label>
+                                <input type="text" name="name">
+                            </div>
+
+                            <div>
+                                <label for="name">name</label>
+                                <input type="text" name="name">
+                            </div>
+
+                            <div>
+                                <label for="name">name</label>
+                                <input type="text" name="name">
+                            </div>
+
+                        </div>
+                        
+                        <label for="name">name</label>
+                        <input type="text" name="name">
+
+                        <label for="name">name</label>
+                        <input type="textarea" name="name">
+
+                        <button type="submit" class="main__button button --action _anim-items _anim-no-hide --action">Submit message</button>
+                    </form>
+                </div>
+            </div>
+            
+
+            <section class="meets">
+                <h2 class="meets__heading primary-title _anim-items _anim-no-hide">See what makes 
+                    Simply Aesthetic different </h2>
+                <div class="meets__buttons">
+                    <a href="" class="meets__button button --action _anim-items _anim-no-hide">Our Services</a>
+                    <a href="" class="meets__button button --light _anim-items _anim-no-hide">Book an appointment</a>
+                </div>
+            </section>
+
+        </main>
+@@include('html/_footer.htm',{})
+</div>
+@@include('html/_popup.htm',{})
+@@include('html/_js.htm',{})
+</body>
+
+</html>

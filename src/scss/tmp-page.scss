@@ -15,43 +15,43 @@
         }
     }
 
-    .page-head {
-        position: relative;
+}
 
-        &__img {
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                @include adaptiveValue("min-height", 425, 250);
-            }
-        }
+.page-head {
+    position: relative;
 
-        &__title {
-            color: #FFFFFF;
-            font-family: Marcellus;
-            @include adaptiveValue("font-size", 60, 34);
-            letter-spacing: -0.47px;
-            line-height: 52px;
-            position: absolute;
-            bottom: 60px;
-            width: 1440px;
-            margin: 0 auto;
-            padding: 0 20px;
-
-            img {
-                display: block;
-                margin-bottom: 15px;
-                width: 100%;
-                height: 100%;
-                max-width: 55px;
-                max-height: 59px;
-            }
+    &__img {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include adaptiveValue("min-height", 425, 250);
         }
     }
 
+    &__title {
+        color: #FFFFFF;
+        font-family: Marcellus;
+        @include adaptiveValue("font-size", 60, 34);
+        letter-spacing: -0.47px;
+        line-height: 52px;
+        position: absolute;
+        bottom: 60px;
+        width: 1440px;
+        margin: 0 auto;
+        padding: 0 20px;
 
+        img {
+            display: block;
+            margin-bottom: 15px;
+            width: 100%;
+            height: 100%;
+            max-width: 55px;
+            max-height: 59px;
+        }
+    }
 }
+
 
 
 
